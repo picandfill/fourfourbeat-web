@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fourfourbeat.taegabi.com/sitemap.xml
