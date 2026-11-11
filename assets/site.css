@@ -27,6 +27,11 @@ img { max-width: 100%; height: auto; }
 .brand img { border-radius: 9px; }
 .top nav a { color: var(--ink); text-decoration: none; margin-left: 18px; font-size: 15px; }
 .top nav a:hover { color: var(--accent); }
+.lang { font-size: 14px; color: var(--dim); white-space: nowrap; }
+.lang a { color: var(--dim); margin: 0 0 0 10px; text-decoration: none; }
+.lang a[aria-current] { color: var(--ink); font-weight: 700; }
+:lang(ja) .brand, :lang(ja) .hero .tag, :lang(ja) .shots figcaption, :lang(ja) .card h3, :lang(ja) .doc h1 { font-family: "Yusei Magic", "Gaegu", sans-serif; font-weight: 400; }
+:lang(ja) body { font-family: "IBM Plex Sans JP", system-ui, -apple-system, sans-serif; word-break: normal; line-break: strict; }
 
 .hero { text-align: center; padding: 56px 0 24px; }
 .hero .icon { width: 132px; height: 132px; border-radius: 30px; box-shadow: 0 10px 26px rgba(29, 21, 48, 0.18); }
@@ -36,10 +41,11 @@ img { max-width: 100%; height: auto; }
 .hero p { color: var(--dim); margin: 0 auto; max-width: 560px; }
 .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 26px 0 0; }
 .badge { display: inline-block; padding: 12px 22px; border: 2.5px solid var(--ink); border-radius: 14px; background: var(--card); color: var(--ink); text-decoration: none; font-weight: 600; box-shadow: 4px 5px 0 rgba(29, 21, 48, 0.2); }
+.badge:hover { border-color: var(--accent); }
 .badge.soon { color: var(--dim); border-style: dashed; box-shadow: none; }
 
-.shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin: 44px 0; }
-.shots figure { margin: 0; }
+.shots { display: flex; gap: 18px; margin: 44px -20px; padding: 4px 20px 14px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 20px; }
+.shots figure { margin: 0; flex: 0 0 214px; scroll-snap-align: start; }
 .shots img { display: block; width: 100%; border: 3px solid var(--ink); border-radius: 22px; background: var(--card); }
 .shots figcaption { text-align: center; font: 700 22px/1.3 "Gaegu", cursive; margin-top: 10px; }
 
@@ -66,7 +72,11 @@ footer a { color: var(--dim); }
 
 @media (max-width: 760px) {
   .hero h1 { font-size: 50px; }
-  .shots { grid-template-columns: repeat(2, 1fr); }
+  .shots figure { flex-basis: 46%; }
   .features { grid-template-columns: 1fr; }
   .top nav a { margin-left: 12px; }
+  .top nav .doclinks { display: none; }
+  .top .wrap { flex-wrap: wrap; height: auto; min-height: 64px; padding-top: 10px; padding-bottom: 10px; gap: 4px 12px; }
+  .brand { font-size: 21px; white-space: nowrap; gap: 8px; }
+  .lang a { margin-left: 8px; }
 }

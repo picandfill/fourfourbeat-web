@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://fourfourbeat.taegabi.com/</loc></url>
   <url><loc>https://fourfourbeat.taegabi.com/privacy</loc></url>
-  <url><loc>https://fourfourbeat.taegabi.com/delete</loc></url>
   <url><loc>https://fourfourbeat.taegabi.com/terms</loc></url>
+  <url><loc>https://fourfourbeat.taegabi.com/delete</loc></url>
+  <url><loc>https://fourfourbeat.taegabi.com/en/</loc></url>
+  <url><loc>https://fourfourbeat.taegabi.com/en/privacy</loc></url>
+  <url><loc>https://fourfourbeat.taegabi.com/en/terms</loc></url>
+  <url><loc>https://fourfourbeat.taegabi.com/en/delete</loc></url>
+  <url><loc>https://fourfourbeat.taegabi.com/ja/</loc></url>
+  <url><loc>https://fourfourbeat.taegabi.com/ja/privacy</loc></url>
+  <url><loc>https://fourfourbeat.taegabi.com/ja/terms</loc></url>
+  <url><loc>https://fourfourbeat.taegabi.com/ja/delete</loc></url>
 </urlset>
